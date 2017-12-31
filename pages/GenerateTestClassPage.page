@@ -1,0 +1,13 @@
+<apex:page controller="GenerateTestClassController" >
+    <apex:form id="formID">
+        
+        Record Id : <apex:inputText value="{!recordID}" title="Record Id :"/> <br/> <br/> 
+        Don't Include Blank Fields? : <apex:inputCheckbox value="{!isCheckNullOrBlank}"/><br/> 
+        Create test data for referenced Objects? : <apex:inputCheckbox value="{!isCheckReferenceObjects}"/><br/> 
+        <apex:commandButton value="Generate" action="{!doGeneateTestData}"/><br/> 
+        Test Data : <br/> 
+        <apex:inputTextarea title="Test Data :" value="{!testClassStr}" rows="10" richText="false" cols="100" />
+        
+        <apex:pageBlock id="hiddenBlock" rendered="false"></apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>GenerateTestClassController</members>
+        <members>GenerateTestClassUtil</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>GenerateTestClassPage</members>
+        <name>ApexPage</name>
+    </types>
+    <version>39.0</version>
+</Package>
