@@ -1,8 +1,11 @@
 # TestClassGenerator
 Salesforce Sample Project which creates String of Test Data Setup. 
 
-Option 1 : Data for Single Object and Excluding Blanks Values. 
-TestClassGenerator/Option1.gif
+
+
+## Option 1 : Data for Single Object and Excluding Blanks Values. 
+
+[![Architecture Diagram](TestClassGenerator/Option1.gif)][1]
 
 Option 2 : Data for Single Object and Including Blanks Values. 
 
