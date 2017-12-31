@@ -134,41 +134,6 @@ global class GenerateTestClassController{
                     //Continue if field is to be ignored.
                     if(fieldToIgnore.containsIgnoreCase(fieldName)) continue;
                     
-                    //Check if it is Address Type Field.
-                    if(fielddataType==Schema.DisplayType.ADDRESS){
-                        //addressFields = new set<string>{'City','Country','CountryCode','Latitude','Longitude','PostalCode','State','StateCode','Street'};
-                        /*
-                        if(record.get(fieldName)!=null) {
-                            system.debug('record.get(fieldName)-->' + (Address) record.get(fieldName));
-                            Address addr = (Address) record.get(fieldName);
-                            String modifiedfieldname = fieldName.remove('Address');
-                            String addressTestString = '';
-                            
-                            if(addr.getCity()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'City'+'='+ '\''+ addr.getCity()+ '\'' +'; \n';
-                            if(addr.getCountry()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'Country'+'='+ '\'' +addr.getCountry()+ '\'' +'; \n';
-                            if(addr.getCountryCode()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'CountryCode'+'='+ '\'' +addr.getCountryCode()+ '\''+'; \n';
-                            if(addr.getLatitude()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'Latitude'+'='+ '\''+addr.getLatitude()+ '\''+'; \n';
-                            if(addr.getLongitude()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'Longitude'+'='+ '\''+addr.getLongitude()+ '\''+'; \n';
-                            if(addr.getPostalCode()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'PostalCode'+'='+ '\''+addr.getPostalCode()+ '\''+'; \n';
-                            if(addr.getState()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'State'+'='+ '\''+addr.getState()+ '\''+'; \n';
-                            if(addr.getStateCode()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'StateCode'+'='+ '\''+addr.getStateCode()+ '\''+'; \n';
-                            if(addr.getStreet()!=null)
-                                addressTestString += soInstanceName+'.'+modifiedfieldname+'Street'+'='+ '\''+addr.getStreet()+ '\''+'; \n';                                                        
-                            
-                            currentSobjectTestString = instVsTestClassStr.containskey(soInstanceName) ? instVsTestClassStr.get(soInstanceName) + addressTestString : addressTestString;
-                            instVsTestClassStr.put(soInstanceName,currentSobjectTestString);
-                        }
-						*/
-                    }
-                    
                     //Check for Reference type of field.
                     if(fielddataType==Schema.DisplayType.REFERENCE){
                         if((string)record.get(fieldName)!=null) {
